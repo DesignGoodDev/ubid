@@ -1,0 +1,65 @@
+// body {
+// 	background-color: rgb(240, 240, 240);
+// }
+
+// .skip-navigation {
+// 	@include sr-only;
+// 	@include sr-only-focusable;
+// }
+
+// Home
+
+
+@include media-breakpoint-down(md) {
+	.deals-carousel .carousel-item > div {
+		display: none;
+		&:first-child {
+			display: block;
+		}
+	}
+}
+
+.deals-carousel {
+	.carousel-item.active,
+	.carousel-item-next,
+	.carousel-item-prev {
+		display: flex;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.deals-carousel {
+		.carousel-item-right.active,
+		.carousel-item-next {
+			transform: translateX(25%);
+		}
+	}
+	.deals-carousel {
+		.carousel-item-left.active,
+		.carousel-item-prev {
+			transform: translateX(-25%);
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.deals-carousel {
+		.carousel-item-right.active,
+		.carousel-item-next {
+			transform: translateX(16.666%);
+		}
+	}
+	.deals-carousel {
+		.carousel-item-left.active,
+		.carousel-item-prev {
+			transform: translateX(-16.666%);
+		}
+	}
+}
+
+.deals-carousel {
+	.carousel-item-right,
+	.carousel-item-left {
+		transform: translateX(0);
+	}
+}
