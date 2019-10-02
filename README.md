@@ -16,6 +16,7 @@ git clone https://designgooddev@bitbucket.org/designgooddev/ubid.git
 
 Install:
 ```sh
+cd ubid
 npm install
 ```
 
