@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "custom design for uBid",
   "repository": "https://bitbucket.org/designgooddev/ubid",
+  "private": true,
   "main": "index.js",
   "dependencies": {
     "bootstrap": "^4.3.1",

@@ -1,14 +1,7 @@
 import 'bootstrap';
 import './scss/style.scss';
 
-// if (module.hot) {
-// 	module.hot.accept()
-// }
-
-// const root = document.createElement("div")
-// root.innerHTML = `<p>Hello Webpack.</p>`
-// document.body.appendChild(root)
-
+// https://www.codeply.com/go/zjZsn1ly29
 jQuery('#dealsCarousel .carousel-item').each(function () {
 	var minPerSlide = 4;
 	var next = $(this).next();
@@ -22,7 +15,6 @@ jQuery('#dealsCarousel .carousel-item').each(function () {
 		if (!next.length) {
 			next = $(this).siblings(':first');
 		}
-
 		next.children(':first-child').clone().appendTo($(this));
 	}
 });

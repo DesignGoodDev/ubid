@@ -4,9 +4,6 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
 	mode: 'development',
-	// devServer: {
-	// 	hot: true
-	// },
 	module: {
 		rules: [
 			{
@@ -18,28 +15,33 @@ module.exports = merge(common, {
 					},
 					{
 						// Interprets `@import` and `url()` like `import/require()` and will resolve them
-						loader: 'css-loader'
+						loader: 'css-loader',
+						options: {
+							url: false,
+							sourceMap: true
+						},
 					},
 					{
 						// Loader for webpack to process CSS with PostCSS
 						loader: 'postcss-loader',
 						options: {
+							sourceMap: true,
 							plugins: function () {
 								return [
 									require('autoprefixer')
 								];
 							}
-						}
+						},
 					},
 					{
 						// Loads a SASS/SCSS file and compiles it to CSS
-						loader: 'sass-loader'
-					}
+						loader: 'sass-loader',
+						options: {
+							sourceMap: true
+						},
+					},
 				]
 			}
 		]
 	},
-	// plugins: [
-	// 	new webpack.HotModuleReplacementPlugin()
-	// ]
 });
