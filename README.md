@@ -11,7 +11,7 @@ A custom ecommerce design built on top of Bootstrap 4
 
 Download from source:
 ```sh
-git clone https://designgooddev@bitbucket.org/designgooddev/ubid.git
+git clone https://github.com/DesignGoodDev/ubid.git
 ```
 
 Install:

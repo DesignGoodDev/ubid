@@ -2,7 +2,7 @@
   "name": "ubid",
   "version": "1.0.0",
   "description": "custom design for uBid",
-  "repository": "https://bitbucket.org/designgooddev/ubid",
+  "repository": "https://github.com/DesignGoodDev/ubid",
   "private": true,
   "main": "index.js",
   "dependencies": {
